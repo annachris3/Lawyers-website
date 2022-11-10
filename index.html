@@ -32,16 +32,18 @@
           <a href="#team">Team</a>
           <a href="#contact">Contact</a>
         </nav>
-        <!--    Mobile    
-          <i class="bi bi-list" id="menu"></i>
-          <nav id="mobile-navbar">
-            <a href="#header">Home</a>
-            <a href="#expertise-areas">Practice areas</a>
-            <a href="#about">About</a>
-            <a href="#team">Team</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        -->
+        <!--    Mobile    -->  
+        <i class="bi bi-list" id="menu"></i>
+        <nav id="mobile-navbar">
+          <i class="bi bi-x-lg" id="close-menu"></i>
+          <a href="#header">Home</a>
+          <a href="#expertise-areas">Practice areas</a>
+          <a href="#about">About</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <!-- end   -->  
+        
       </div>
       <div class="banner active">
         <span class="square"></span>
@@ -232,10 +234,14 @@
         <p class="section-subtitle">Contact us</p>
         <form>
           <div class="form-control">
-            <input type="text" name="name" id="name" placeholder="Name" />
-            <input type="email" name="email" id="email" placeholder="E-mail" />
+            <label for="name" > Name </label>
+            <input type="text" name="name" id="name" placeholder="Name" required />
+            <label for="email" > Email </label>
+            <input type="email" name="email" id="email" placeholder="E-mail" required />
           </div>
+          <label for="phone" > Phone number </label>
           <input type="text" name="phone" id="phone" placeholder="Phone Number" />
+          <label for="message" > Message </label>
           <textarea
             name="message"
             id="message"
@@ -295,6 +301,7 @@
       </div>
     </footer> 
 
-
+<script src="./scripts.js" ></script> 
+<!-- se colocar o defer , pode-se deixar no inicio do html = <script src=... defer></script>-->
 </body>
 </html>
